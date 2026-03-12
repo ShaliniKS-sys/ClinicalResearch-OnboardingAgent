@@ -4,7 +4,7 @@ import { useState, useRef, useEffect, useCallback } from "react";
 // Relative paths — Vite dev server proxies /webhook/* → https://pallavi04.app.n8n.cloud
 // This avoids CORS errors when running on localhost.
 const N8N_CHAT_WEBHOOK = "https://shaliniks.app.n8n.cloud/webhook/cra-intake";
-const N8N_DASHBOARD_WEBHOOK = "https://pallavi04.app.n8n.cloud/webhook/19ec5753-7142-4027-bda5-7596b63d7a35";
+const N8N_DASHBOARD_WEBHOOK = "https://shaliniks.app.n8n.cloud/webhook/19ec5753-7142-4027-bda5-7596b63d7a35";
 
 // ─── HELPERS ─────────────────────────────────────────────────────────────────
 function generateSessionId() {
@@ -822,7 +822,7 @@ function ManagerDashboard({ onBack }) {
     setLoading(true);
     setError(null);
     try {
-      const res = await fetch("https://pallavi04.app.n8n.cloud/webhook/19ec5753-7142-4027-bda5-7596b63d7a35", {
+      const res = await fetch("https://shaliniks.app.n8n.cloud/webhook/19ec5753-7142-4027-bda5-7596b63d7a35", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ action: "getDashboard" })
