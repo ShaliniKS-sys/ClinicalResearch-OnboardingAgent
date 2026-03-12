@@ -3,7 +3,7 @@ import { useState, useRef, useEffect, useCallback } from "react";
 // ─── CONFIG ──────────────────────────────────────────────────────────────────
 // Relative paths — Vite dev server proxies /webhook/* → https://pallavi04.app.n8n.cloud
 // This avoids CORS errors when running on localhost.
-const N8N_CHAT_WEBHOOK = "https://pallavi04.app.n8n.cloud/webhook/cra-intake";
+const N8N_CHAT_WEBHOOK = "https://shaliniks.app.n8n.cloud/webhook/cra-intake";
 const N8N_DASHBOARD_WEBHOOK = "https://pallavi04.app.n8n.cloud/webhook/19ec5753-7142-4027-bda5-7596b63d7a35";
 
 // ─── HELPERS ─────────────────────────────────────────────────────────────────
