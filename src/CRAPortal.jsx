@@ -210,7 +210,6 @@ function LandingView({ onStaff, onManager }) {
             <div style={{ color: "rgba(255,255,255,.5)", fontSize: 11 }}>Office of Clinical Research</div>
           </div>
         </div>
-        <div style={{ background: "rgba(255,255,255,.08)", borderRadius: 20, padding: "5px 14px", color: "rgba(255,255,255,.6)", fontSize: 11, fontFamily: "'DM Mono', monospace" }}>SOP 15 v4.0</div>
       </div>
 
       {/* Hero */}
@@ -227,7 +226,7 @@ function LandingView({ onStaff, onManager }) {
           </h1>
 
           <p style={{ color: "rgba(255,255,255,.65)", fontSize: 15, lineHeight: 1.7, marginBottom: 44, maxWidth: 420, margin: "0 auto 44px" }}>
-            Your AI-guided onboarding companion. Get a personalized training plan, track your compliance, and stay research-ready — grounded in SOP 15 v4.0.
+            Your AI-guided onboarding companion. Get a personalized training plan, track your compliance, and stay research-ready.
           </p>
 
           <div style={{ display: "flex", gap: 14, justifyContent: "center", flexWrap: "wrap" }}>
@@ -802,7 +801,7 @@ function StaffPortal({ onBack, staffName, setStaffName }) {
               </button>
             </div>
             <div style={{ fontSize: 10, color: "#B0BDD4", marginTop: 6, textAlign: "center" }}>
-              Enter to send · Shift+Enter for new line · SOP 15 v4.0
+              Enter to send · Shift+Enter for new line
             </div>
           </div>
         </div>
