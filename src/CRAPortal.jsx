@@ -158,7 +158,7 @@ function FormatMessage({ text }) {
 
 // ─── INTAKE QUESTIONS (shown as quick-start before chat) ─────────────────────
 const INTAKE_STEPS = [
-  { key: "third_party", question: "Are you a GWU/MFA employee?", options: ["Yes — GWU/MFA staff", "No — external/vendor staff"] },
+  { key: "third_party", question: "Are you a GWC employee?", options: ["Yes — GWC staff", "No — external/vendor staff"] },
   { key: "hire_type", question: "Is this your first time joining the team?", options: ["Yes — new hire", "No — returning staff"] },
 ];
 
@@ -206,7 +206,7 @@ function LandingView({ onStaff, onManager }) {
         <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
           <div style={{ width: 36, height: 36, background: "rgba(255,255,255,.12)", borderRadius: 8, display: "flex", alignItems: "center", justifyContent: "center", fontSize: 18 }}>⚕</div>
           <div>
-            <div style={{ color: "white", fontWeight: 600, fontSize: 14, letterSpacing: .3 }}>GWU MFA Clinical Research</div>
+            <div style={{ color: "white", fontWeight: 600, fontSize: 14, letterSpacing: .3 }}>GWC Clinical Research</div>
             <div style={{ color: "rgba(255,255,255,.5)", fontSize: 11 }}>Office of Clinical Research</div>
           </div>
         </div>
@@ -249,7 +249,7 @@ function LandingView({ onStaff, onManager }) {
 
       {/* Footer */}
       <div style={{ padding: "16px 40px", textAlign: "center", color: "rgba(255,255,255,.25)", fontSize: 11, borderTop: "1px solid rgba(255,255,255,.06)" }}>
-        GWU MFA Clinical Research · SOP 15 v4.0 (Revised November 2023) · Powered by Claude (Anthropic)
+        GWC Clinical Research · SOP 15 v4.0 (Revised November 2023) · Powered by Claude (Anthropic)
       </div>
     </div>
   );
@@ -301,11 +301,11 @@ function StaffPortal({ onBack, staffName, setStaffName }) {
       placeholder: "e.g. Jane Smith"
     },
     {
-      question: "Are you a GWU/MFA employee or an external/vendor contractor?",
+      question: "Are you a GWC employee or an external/vendor contractor?",
       key: "third_party",
       type: "radio",
       options: [
-        { label: "GWU/MFA Employee", value: "no" },
+        { label: "GWC Employee", value: "no" },
         { label: "External / Vendor Staff", value: "yes" }
       ]
     },
@@ -599,7 +599,7 @@ function StaffPortal({ onBack, staffName, setStaffName }) {
 
               {[
                 { label: "Full Name", value: intakeData.staff_name },
-                { label: "Employee Type", value: intakeData.third_party === "no" ? "GWU/MFA Employee" : "External / Vendor Staff" },
+                { label: "Employee Type", value: intakeData.third_party === "no" ? "GWC Employee" : "External / Vendor Staff" },
                 { label: "Staff Status", value: intakeData.returning_staff === "no" ? "New Hire" : "Returning Staff" },
                 { label: "Role", value: intakeData.role },
                 { label: "Hire Date", value: intakeData.hire_date },
@@ -904,7 +904,7 @@ function ManagerDashboard({ onBack }) {
         <div style={{ width: 34, height: 34, background: "linear-gradient(135deg,#2C5F8A,#4A90D9)", borderRadius: 8, display: "flex", alignItems: "center", justifyContent: "center", fontSize: 17 }}>⚕</div>
         <div style={{ flex: 1 }}>
           <div style={{ fontSize: 14, fontWeight: 600 }}>Training Compliance Dashboard</div>
-          <div style={{ fontSize: 10, color: "rgba(255,255,255,.4)" }}>GWU MFA Clinical Research · SOP 15 v4.0 · Manager View</div>
+          <div style={{ fontSize: 10, color: "rgba(255,255,255,.4)" }}>GWC Clinical Research · SOP 15 v4.0 · Manager View</div>
         </div>
         <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
           {lastRefresh && <span style={{ fontSize: 11, color: "rgba(255,255,255,.35)" }}>Updated {lastRefresh.toLocaleTimeString()}</span>}
